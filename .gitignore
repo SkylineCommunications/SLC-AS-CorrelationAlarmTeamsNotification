@@ -1,0 +1,42 @@
+# Visual Studio 2022
+.vs2022/
+.vs
+.vs/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# .NET Scaffolding
+ScaffoldingAssemblies/
+
+# .NET build directories
+bin/
+obj/
+
+# .NET resource file
+*.resx
+
+# Tye
+.tye/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk

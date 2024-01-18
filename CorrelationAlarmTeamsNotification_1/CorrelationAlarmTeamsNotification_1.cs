@@ -18,7 +18,6 @@ namespace CorrelationAlarmTeamsNotification_1
 		/// The script entry point.
 		/// </summary>
 		/// <param name="engine">Link with SLAutomation process.</param>
-		[Obsolete]
 		public void Run(IEngine engine)
 		{
 			var chatIntegrationHelper = new ChatIntegrationHelperBuilder().Build();
@@ -75,7 +74,7 @@ namespace CorrelationAlarmTeamsNotification_1
 			}
 		}
 
-		private string GetRequiredParam(IEngine engine, string parameterName)
+		private static string GetRequiredParam(IEngine engine, string parameterName)
 		{
 			try
 			{
@@ -83,6 +82,7 @@ namespace CorrelationAlarmTeamsNotification_1
 				if (string.IsNullOrWhiteSpace(parameter?.Value))
 				{
 					engine.ExitFail($"'{parameterName}' parameter is required.");
+					return null;
 				}
 
 				return parameter.Value;
@@ -96,10 +96,10 @@ namespace CorrelationAlarmTeamsNotification_1
 		private List<AdaptiveElement> CreateNotification(string notification, string parameterDescription, CorrelationData correlationAlarmData, string element)
 		{
 			AdaptiveColumnSet notificationTitle = CreateNotificationTitle(notification, correlationAlarmData.Color);
-			var adaptiveCard = new List<AdaptiveElement>()
+			var adaptiveCard = new List<AdaptiveElement>
 				{
 					notificationTitle,
-					new AdaptiveFactSet()
+					new AdaptiveFactSet
 					{
 						Facts = new List<AdaptiveFact>
 						{
