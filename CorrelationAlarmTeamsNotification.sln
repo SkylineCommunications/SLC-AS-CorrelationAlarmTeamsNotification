@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Internal", "Internal", "{7FC59D8B-CE0D-4FA2-BAB8-2B7349C4446D}"
+	ProjectSection(SolutionItems) = preProject
+		Internal\.editorconfig = Internal\.editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{EB4CFCC9-685C-4B1F-8C1D-C7AF185BCA3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dlls", "Dlls", "{2A22DED6-9426-49ED-ACEB-7953E2B2F3EB}"
+	ProjectSection(SolutionItems) = preProject
+		Dlls\ABOUT.md = Dlls\ABOUT.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompanionFiles", "CompanionFiles", "{DDB3B73A-B7F8-4188-B237-6FDB1C1A45A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Skyline DataMiner", "Skyline DataMiner", "{AA5BA6D3-96E0-4B52-B229-080E96792691}"
+	ProjectSection(SolutionItems) = preProject
+		CompanionFiles\Skyline DataMiner\AboutThisFolder.md = CompanionFiles\Skyline DataMiner\AboutThisFolder.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{7E595CB8-D449-4756-9A53-E02962107202}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\ABOUT.md = Documentation\ABOUT.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F8938D60-51A0-4880-9CFC-19C66379BB5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Analysis", "Code Analysis", "{198CBADD-166C-4643-8E09-273A8B5363B2}"
+	ProjectSection(SolutionItems) = preProject
+		Internal\Code Analysis\qaction-debug.ruleset = Internal\Code Analysis\qaction-debug.ruleset
+		Internal\Code Analysis\qaction-release.ruleset = Internal\Code Analysis\qaction-release.ruleset
+		Internal\Code Analysis\stylecop.json = Internal\Code Analysis\stylecop.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CorrelationAlarmTeamsNotification", "CorrelationAlarmTeamsNotification", "{48838EAD-8845-40AB-9820-556424248CDC}"
+	ProjectSection(SolutionItems) = preProject
+		CorrelationAlarmTeamsNotification.xml = CorrelationAlarmTeamsNotification.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{DAD8F2FE-484D-4746-8446-161C99516F02}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorrelationAlarmTeamsNotification_1", "CorrelationAlarmTeamsNotification_1\CorrelationAlarmTeamsNotification_1.csproj", "{3C5FACB5-F512-451B-A7F3-9CB56F22F2DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C5FACB5-F512-451B-A7F3-9CB56F22F2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C5FACB5-F512-451B-A7F3-9CB56F22F2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C5FACB5-F512-451B-A7F3-9CB56F22F2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C5FACB5-F512-451B-A7F3-9CB56F22F2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA5BA6D3-96E0-4B52-B229-080E96792691} = {DDB3B73A-B7F8-4188-B237-6FDB1C1A45A0}
+		{198CBADD-166C-4643-8E09-273A8B5363B2} = {7FC59D8B-CE0D-4FA2-BAB8-2B7349C4446D}
+		{48838EAD-8845-40AB-9820-556424248CDC} = {EB4CFCC9-685C-4B1F-8C1D-C7AF185BCA3D}
+		{DAD8F2FE-484D-4746-8446-161C99516F02} = {48838EAD-8845-40AB-9820-556424248CDC}
+		{3C5FACB5-F512-451B-A7F3-9CB56F22F2DD} = {DAD8F2FE-484D-4746-8446-161C99516F02}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {124EDCF8-F8D2-4633-B201-CD0B297A0CB8}
+	EndGlobalSection
+EndGlobal

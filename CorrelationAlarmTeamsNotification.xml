@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DMSScript options="272" xmlns="http://www.skyline.be/automation">
+	<Name>CorrelationAlarmTeamsNotification</Name>
+	<Description></Description>
+	<Type>Automation</Type>
+	<Author>DBO</Author>
+	<CheckSets>FALSE</CheckSets>
+	<Folder></Folder>
+
+	<Protocols>
+	</Protocols>
+
+	<Memory>
+	</Memory>
+
+	<Parameters>
+		<ScriptParameter id="10" type="" values="TeamsExample">
+			<Description>Team Id</Description>
+		</ScriptParameter>
+		<ScriptParameter id="20" type="" values="ChannelsExample">
+			<Description>Channel Id</Description>
+		</ScriptParameter>
+		<ScriptParameter id="30" type="" values="">
+			<Description>Notification</Description>
+		</ScriptParameter>
+		<ScriptParameter id="40" type="" values="">
+			<Description>Parameter Description</Description>
+		</ScriptParameter>
+	</Parameters>
+
+	<Script>
+		<Exe id="1" type="csharp">
+			<Value><![CDATA[[Project:CorrelationAlarmTeamsNotification_1]]]></Value>
+			<!--<Param type="debug">true</Param>-->
+			<Message></Message>
+		</Exe>
+	</Script>
+</DMSScript>

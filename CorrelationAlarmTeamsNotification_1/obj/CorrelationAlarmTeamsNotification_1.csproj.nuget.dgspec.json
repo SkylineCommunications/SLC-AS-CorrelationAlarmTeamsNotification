@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\DikaBO\\Desktop\\Dika Bosnjak Training\\Task 4\\SLC-AS-CorrelationAlarmTeamsNotification\\CorrelationAlarmTeamsNotification_1\\CorrelationAlarmTeamsNotification_1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\DikaBO\\Desktop\\Dika Bosnjak Training\\Task 4\\SLC-AS-CorrelationAlarmTeamsNotification\\CorrelationAlarmTeamsNotification_1\\CorrelationAlarmTeamsNotification_1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DikaBO\\Desktop\\Dika Bosnjak Training\\Task 4\\SLC-AS-CorrelationAlarmTeamsNotification\\CorrelationAlarmTeamsNotification_1\\CorrelationAlarmTeamsNotification_1.csproj",
+        "projectName": "CorrelationAlarmTeamsNotification_1",
+        "projectPath": "C:\\Users\\DikaBO\\Desktop\\Dika Bosnjak Training\\Task 4\\SLC-AS-CorrelationAlarmTeamsNotification\\CorrelationAlarmTeamsNotification_1\\CorrelationAlarmTeamsNotification_1.csproj",
+        "packagesPath": "C:\\Users\\DikaBO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DikaBO\\Desktop\\Dika Bosnjak Training\\Task 4\\SLC-AS-CorrelationAlarmTeamsNotification\\CorrelationAlarmTeamsNotification_1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\DikaBO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://devcore3:81/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Skyline.DataMiner.Core.DataMinerSystem.Automation": {
+              "target": "Package",
+              "version": "[1.1.1.4, )"
+            },
+            "Skyline.DataMiner.DcpChatIntegrationHelper": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Skyline.DataMiner.Dev.Automation": {
+              "target": "Package",
+              "version": "[10.4.1.2, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
