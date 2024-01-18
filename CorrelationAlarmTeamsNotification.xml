@@ -14,10 +14,10 @@
 	</Memory>
 
 	<Parameters>
-		<ScriptParameter id="10" type="" values="TeamsExample">
+		<ScriptParameter id="10" type="" values="Teams">
 			<Description>Team Id</Description>
 		</ScriptParameter>
-		<ScriptParameter id="20" type="" values="ChannelsExample">
+		<ScriptParameter id="20" type="" values="Channels">
 			<Description>Channel Id</Description>
 		</ScriptParameter>
 		<ScriptParameter id="30" type="" values="">
