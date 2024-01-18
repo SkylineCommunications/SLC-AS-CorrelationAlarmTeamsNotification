@@ -123,7 +123,7 @@ namespace CorrelationAlarmTeamsNotification_1
 			var coloredBox = new AdaptiveImage
 			{
 				Size = AdaptiveImageSize.Stretch,
-				Url = new Uri("https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png?20091205084734"),
+				Url = new Uri("https://raw.githubusercontent.com/SkylineCommunications/SLC-AS-CorrelationAlarmTeamsNotification/main/images/empty_image.png"),
 				BackgroundColor = notificationColor,
 				Style = AdaptiveImageStyle.Person,
 				PixelWidth = 20,
