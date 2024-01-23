@@ -30,11 +30,11 @@
 
 		public DateTime AlarmTime { get; set; }
 
-		public int ServiceRCA { get; set; }
+		public int ServiceRca { get; set; }
 
-		public int ElementRCA { get; set; }
+		public int ElementRca { get; set; }
 
-		public int ParameterRCA { get; set; }
+		public int ParameterRca { get; set; }
 
 		public int SeverityRange { get; set; }
 
@@ -73,21 +73,21 @@
 				Status = Tools.ToInt32(parts[9]),
 				AlarmValue = parts[10],
 				AlarmTime = DateTime.Parse(parts[11]),
-				ServiceRCA = Tools.ToInt32(parts[12]),
-				ElementRCA = Tools.ToInt32(parts[13]),
-				ParameterRCA = Tools.ToInt32(parts[14]),
+				ServiceRca = Tools.ToInt32(parts[12]),
+				ElementRca = Tools.ToInt32(parts[13]),
+				ParameterRca = Tools.ToInt32(parts[14]),
 				SeverityRange = Tools.ToInt32(parts[15]),
 				SourceID = Tools.ToInt32(parts[16]),
 				UserStatus = Tools.ToInt32(parts[17]),
 				Owner = parts[18],
 				ImpactedServices = parts[19],
-				Color = GetColor(Tools.ToInt32(parts[7])),
+				Color = GetColorCode(Tools.ToInt32(parts[7])),
 			};
 
 			return correlationData;
 		}
 
-		public static string GetColor(int severity)
+		private static string GetColorCode(int severity)
 		{
 			switch (severity)
 			{
@@ -99,6 +99,10 @@
 					return "#61d6d6"; // Color type="minor" value="97,214,214"
 				case 4:
 					return "#3b78ff"; // Color type="warning" value="59,120,255"
+				case 5:
+					return "#16c60c"; // Color type="normal" value="22,198,12"
+				case 24:
+					return "#16c60c"; // Color type="error" value="204,204,204"
 				default:
 					return "#000000"; // Default case (you can change this to handle unknown cases)
 			}
